@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: https://CeritaMedicalConsult.github.io/sitemap.xml
+Disallow: /contents/
+Allow: contents/images/logo.png
