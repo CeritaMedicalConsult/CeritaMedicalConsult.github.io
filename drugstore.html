@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مرکز اطلاعات و مشاوره دارویی سریتا</title>
+    <title>اطلاعات داروخانه مرکز اطلاعات و مشاوره دارویی سریتا</title>
     <link rel="icon" type="image/x-icon" href="contents/images/Icon.ico">
     <link rel="stylesheet" href="contents/style.css">
 </head>
@@ -21,12 +21,27 @@
     </header>
     <main>
         <section>
-            <h1>خوش آمدید</h1>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ...</p>
+            <h1>اطلاعات داروخانه‌ها</h1>
+            <input type="text" id="searchDrugstore" placeholder="جستجو در اطلاعات داروخانه‌ها...">
+            <table id="drugstoreTable">
+                <thead>
+                    <tr>
+                        <th>ردیف</th>
+                        <th>نام داروخانه</th>
+                        <th>آدرس</th>
+                        <th>شماره تماس</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- داده‌ها به صورت پویا بارگذاری می‌شوند -->
+                </tbody>
+            </table>
+            <div id="paginationDrugstore" class="pagination"></div>
         </section>
     </main>
     <footer>
         طراحی شده توسط مرکز اطلاعات و مشاوره دارویی سریتا
     </footer>
+    <script src="contents/script.js"></script>
 </body>
 </html>

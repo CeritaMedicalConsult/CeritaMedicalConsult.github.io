@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اطلاعات دارویی مرکز اطلاعات و مشاوره دارویی سریتا</title>
+    <link rel="icon" type="image/x-icon" href="contents/images/Icon.ico">
+    <link rel="stylesheet" href="contents/style.css">
+</head>
+<body>
+    <header>
+        <div class="banner">مرکز اطلاعات و مشاوره دارویی سریتا</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">صفحه اصلی</a></li>
+                <li><a href="drugstore.html">اطلاعات داروخانه</a></li>
+                <li><a href="drug.html">اطلاعات دارویی</a></li>
+                <li><a href="contact.html">ارتباط با ما</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>اطلاعات دارویی</h1>
+            <input type="text" id="searchDrug" placeholder="جستجو در اطلاعات دارویی...">
+            <table id="drugTable">
+                <thead>
+                    <tr>
+                        <th>ردیف</th>
+                        <th>نام دارو</th>
+                        <th>سیلاب</th>
+                        <th>گروه درمانی</th>
+                        <th>گروه فارماکولوژیک</th>
+                        <th>نام تجاری</th>
+                        <th>اشکال دارویی</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- داده‌ها به صورت پویا بارگذاری می‌شوند -->
+                </tbody>
+            </table>
+            <div id="paginationDrug" class="pagination"></div>
+        </section>
+    </main>
+    <footer>
+        طراحی شده توسط مرکز اطلاعات و مشاوره دارویی سریتا
+    </footer>
+    <script src="contents/script.js"></script>
+</body>
+</html>
