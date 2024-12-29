@@ -96,14 +96,14 @@ function loadData(jsonFile, tableId, searchId, paginationId) {
 function sendContactForm() {
     const firstName = document.getElementById('firstName').value;
     const lastName = document.getElementById('lastName').value;
-    const phone = document.getElementById('phone').value;
+    const mobile = document.getElementById('mobile').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
     const formData = {
         firstName,
         lastName,
-        phone,
+        mobile,
         email,
         message
     };
