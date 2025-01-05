@@ -119,3 +119,30 @@ footer
         float: none;
     }
 }
+
+.thanks-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.thanks-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.thanks-container h1,
+.thanks-container p {
+    margin: 10px 0;
+}
+
+.thanks-main {
+    text-align: center;
+}
+
+.thanks-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}

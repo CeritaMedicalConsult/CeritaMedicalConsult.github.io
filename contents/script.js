@@ -93,24 +93,40 @@ function loadData(jsonFile, tableId, searchId, paginationId) {
         .catch(error => console.error('Error loading data:', error));
 }
 
-function sendContactForm() {
-    const firstName = document.getElementById('firstName').value;
-    const lastName = document.getElementById('lastName').value;
-    const mobile = document.getElementById('mobile').value;
+// form-handler.js
+function handleFormSubmit(event)
+{
+    // جلوگیری از ارسال پیش‌فرض فرم
+    event.preventDefault();
+
+    // دریافت مقادیر فیلدها
+    const firstName = document.getElementById('first-name').value;
+    const lastName = document.getElementById('last-name').value;
+    const phone = document.getElementById('phone').value;
     const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+    const age = document.getElementById('age').value;
+    const gender = document.getElementById('gender').value;
+    const medicalHistory = document.getElementById('medical-history').value;
+    const surgeryhistory = document.getElementById('surgery-history').value;
+    const medications = document.getElementById('medications').value;
+    const mainMessage = document.getElementById('main-message').value;
 
-    const formData = {
-        firstName,
-        lastName,
-        mobile,
-        email,
-        message
-    };
+    // ترکیب مقادیر در قالب مورد نظر
+    const combinedMessage = `نام: ${firstName}\nنام خانوادگی: ${lastName}\nشماره تماس: ${phone}\nایمیل: ${email}\nسن: ${age}\n` +
+                            `جنسیت: ${gender}\nسابقه بیماری: ${medicalHistory}\nسابقه جراحی: ${surgeryhistory}\nداروهای مصرفی: ${medications}\nپیام: ${mainMessage}`;
 
-    // ارسال داده‌ها به سرور یا سرویس ایمیل
-    // این بخش نیاز به پیاده‌سازی سمت سرور دارد
-    console.log('Sending contact form data:', formData);
-    alert('پیام شما ارسال شد!');
-    document.getElementById('contactForm').reset();
+    // قرار دادن پیام ترکیبی در فیلد مخفی
+    document.getElementById('message').value = combinedMessage;
+
+    // ارسال فرم
+    event.target.submit();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', handleFormSubmit);
+});
+
+function handleFormSubmit(event) {
+    // کدهای مربوط به پردازش فرم
 }
