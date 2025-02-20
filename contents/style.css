@@ -22,6 +22,8 @@ header
     padding: 15px 0;
     width: 100%;
     box-sizing: border-box;
+    min-width: 100%;
+    overflow-x: auto;
 }
 
 .banner
@@ -168,5 +170,51 @@ footer
     nav ul li
     {
         float: none;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        width: 100vw;
+    }
+
+    #drugTable {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    #drugTable thead, #drugTable tbody, #drugTable th, #drugTable td, #drugTable tr {
+        display: block;
+    }
+
+    #drugTable thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #drugTable tr {
+        border: 1px solid #ccc;
+    }
+
+    #drugTable td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    #drugTable td:before {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-label);
+        text-align: left;
+        font-weight: bold;
     }
 }
