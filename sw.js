@@ -10,7 +10,11 @@ const urlsToCache = [
   "./contents/script.js",
   "./contents/images/Icon.png",
   "./contents/data/drug.json",
-  "./contents/data/drugstore.json"
+  "./contents/data/drugstore.json",
+  "./ontents/fonts/Gandom.eot",
+  "./ontents/fonts/Gandom.svg",
+  "./ontents/fonts/Gandom.ttf",
+  "./ontents/fonts/Gandom.woff"
 ];
 
 self.addEventListener("install", event => {
