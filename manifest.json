@@ -1,0 +1,20 @@
+{
+  "name": "مرکز اطلاعات و مشاوره دارویی سریتا",
+  "short_name": "سریتا",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "icons": [
+    {
+      "src": "contents/images/Icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "contents/images/Icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
